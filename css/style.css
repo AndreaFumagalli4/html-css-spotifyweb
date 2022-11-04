@@ -91,19 +91,37 @@ footer{
 
 /* X-LARGE */
 @media screen and (max-width: 1400px){
+    
+    article.album{
+        height: 170px;
+        width: 170px;
+    }
 
 }
 
 /* MEDIUM */
 @media screen and (max-width: 878px){
 
-    article.album{
+    section.row{
+        justify-content: flex-start;
         flex-wrap: wrap;
     }
+    
+
+    article.album{
+        height: 150px;
+        width: calc((100% / 4) - 1rem);
+    }
+
 }
 
 /* SMALL */
 @media screen and (max-width: 639px){
+
+    article.album{
+        height: 150px;
+        width: calc((100% / 2) - 1rem);
+    }
 
 }
 
