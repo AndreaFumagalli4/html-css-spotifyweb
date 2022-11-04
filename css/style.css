@@ -16,8 +16,13 @@
     flex-wrap: wrap;
 }
 
-:root{
+.flex-column{
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+:root{
+    
 }
 
 /* css header */
@@ -26,6 +31,17 @@ header{
     background-color: black;
     height: calc(100vh - 100px);
     width: 230px;
+
+}
+
+header section#section-top{
+    background-color: lime;
+    height: 400px;
+}
+
+header section#section-bottom{
+    background-color: blue;
+    height: 50px;
 }
 
 /* css main */
