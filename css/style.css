@@ -53,6 +53,7 @@ section#section-bottom-header{
 main{
     background-color: red;
     width: calc(100% - 230px);
+    overflow-y: scroll;
 }
 
 section#upgrade{
