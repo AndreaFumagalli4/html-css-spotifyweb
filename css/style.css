@@ -34,12 +34,12 @@ header{
 
 }
 
-header section#section-top{
+header section#section-top-header{
     background-color: lime;
     height: 400px;
 }
 
-header section#section-bottom{
+header section#section-bottom-header{
     background-color: blue;
     height: 50px;
 }
@@ -49,6 +49,12 @@ header section#section-bottom{
 main{
     background-color: red;
     width: calc(100% - 230px);
+}
+
+main section#upgrade{
+    background-color: #080b12;
+    height: 80px;
+    width: 100%;
 }
 
 /* css footer */
