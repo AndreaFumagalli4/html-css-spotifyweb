@@ -16,6 +16,10 @@
     flex-wrap: wrap;
 }
 
+.flex-around{
+    justify-content: space-around;
+}
+
 .flex-column{
     flex-direction: column;
     justify-content: space-between;
@@ -34,12 +38,12 @@ header{
 
 }
 
-header section#section-top-header{
+section#section-top-header{
     background-color: lime;
     height: 400px;
 }
 
-header section#section-bottom-header{
+section#section-bottom-header{
     background-color: blue;
     height: 50px;
 }
@@ -51,11 +55,28 @@ main{
     width: calc(100% - 230px);
 }
 
-main section#upgrade{
+section#upgrade{
     background-color: #080b12;
     height: 80px;
-    width: 100%;
 }
+
+section#list{
+    background-color: green;
+    height: 30px;
+}
+
+section.row{
+    margin-top: 3rem;
+}
+
+article.album{
+    background-color: cyan;
+    height: 200px;
+    width: 200px;
+    margin: .5rem;
+}
+
+
 
 /* css footer */
 
@@ -68,19 +89,26 @@ footer{
 
 /* RESPONSIVE !!!! */
 
+/* X-LARGE */
+@media screen and (max-width: 1400px){
+
+}
 
 /* MEDIUM */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 878px){
 
+    article.album{
+        flex-wrap: wrap;
+    }
 }
 
 /* SMALL */
-@media screen and (max-width: 768px) and (min-width: 576px){
-    
+@media screen and (max-width: 639px){
+
 }
 
 /* X-SMALL */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 552px){
 
     header{
         width: 70px;
