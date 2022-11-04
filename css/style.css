@@ -17,7 +17,7 @@
 }
 
 .flex-around{
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .flex-column{
@@ -52,6 +52,7 @@ section#section-bottom-header{
 
 main{
     background-color: red;
+    height: calc(100vh - 100px);
     width: calc(100% - 230px);
     overflow-y: scroll;
 }
@@ -76,7 +77,6 @@ article.album{
     width: 200px;
     margin: .5rem;
 }
-
 
 
 /* css footer */
