@@ -31,7 +31,7 @@ ul{
 }
 
 :root{
-    
+    --main-color: white;
 }
 
 /* css header */
@@ -40,6 +40,7 @@ header{
     background-color: black;
     height: calc(100vh - 100px);
     width: 230px;
+    color: gray;
 
 }
 
@@ -52,7 +53,7 @@ section#section-top-header img{
 }
 
 section#section-top-header ul{
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 section#section-top-header ul>li{
@@ -64,11 +65,25 @@ section#section-top-header li i{
 }
 
 section#section-top-header li span.text{
-    font-size: .9rem;
+    font-size: .85rem;
 }
 
 section#section-top-header li i{
     margin-right: .2rem;
+}
+
+section#section-top-header p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+section#section-top-header ul li#made-playlist{
+    align-items: center;
+}
+
+li#made-playlist span.text{
+    margin-left: 1.75rem;
 }
 
 section#section-bottom-header{
