@@ -119,6 +119,8 @@ main{
     overflow-y: auto;
 }
 
+/* css upgrade section */
+
 section#upgrade{
     background-color: #080b12;
     height: 80px;
@@ -138,6 +140,8 @@ section#upgrade a{
     border-radius: 50px;
 }
 
+/* css list section */
+
 section#list{
     text-align: center;
 }
@@ -150,6 +154,8 @@ section#list ul li{
     font-size: var(--font-dot-eight);
 }
 
+/* css album section */
+
 section#container-row{
     padding: 0 1rem;
 }
@@ -159,8 +165,12 @@ section.row{
 }
 
 section.row h2{
-    padding: 1rem 0;
+    padding-top: 1rem;
     font-size: 2rem;
+}
+
+div.albums-row{
+    margin-top: 1rem;
 }
 
 div.albums-row div.card{
@@ -182,11 +192,22 @@ div.album-info p{
     color: var(--secondary-color);
 }
 
+section.row>p{
+    font-size: var(--font-dot-eight);
+    color: var(--secondary-color);
+    padding: .5rem 0;
+}
+
+div.card div.circle-img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 
 /* css footer */
 
 footer{
-    background-color: yellow;
+    background-color: #282828;
     height: 100px;
     width: 100%;
 }
