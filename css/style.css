@@ -16,10 +16,6 @@
     flex-wrap: wrap;
 }
 
-.flex-around{
-    justify-content: space-between;
-}
-
 .flex-column{
     flex-direction: column;
     justify-content: space-between;
@@ -54,7 +50,7 @@ main{
     background-color: red;
     height: calc(100vh - 100px);
     width: calc(100% - 230px);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 section#upgrade{
@@ -67,6 +63,10 @@ section#list{
     height: 30px;
 }
 
+section#container-row{
+    padding: 0 1rem;
+}
+
 section.row{
     margin-top: 3rem;
 }
@@ -74,8 +74,8 @@ section.row{
 article.album{
     background-color: cyan;
     height: 200px;
-    width: 200px;
-    margin: .5rem;
+    width: calc((100% / 6) - 1rem);
+    margin: 0 1rem 2rem 0;
 }
 
 
@@ -90,34 +90,23 @@ footer{
 
 /* RESPONSIVE !!!! */
 
-/* X-LARGE */
-@media screen and (max-width: 1400px){
-    
-    article.album{
-        height: 170px;
-        width: 170px;
-    }
-
-}
 
 /* MEDIUM */
-@media screen and (max-width: 878px){
+@media screen and (max-width: 992px){
 
     section.row{
-        justify-content: flex-start;
         flex-wrap: wrap;
     }
-    
 
     article.album{
-        height: 150px;
+        height: 170px;
         width: calc((100% / 4) - 1rem);
     }
 
 }
 
 /* SMALL */
-@media screen and (max-width: 639px){
+@media screen and (max-width: 768px){
 
     article.album{
         height: 150px;
@@ -127,7 +116,7 @@ footer{
 }
 
 /* X-SMALL */
-@media screen and (max-width: 552px){
+@media screen and (max-width: 576px){
 
     header{
         width: 70px;
