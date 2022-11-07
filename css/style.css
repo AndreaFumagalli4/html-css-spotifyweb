@@ -33,7 +33,9 @@ ul{
 :root{
     --main-color: white;
     --secondary-color: gray;
-    --display: none; 
+    --display-no: none; 
+    --text-big: uppercase;
+    --font-dot-eight: .8rem;
 }
 
 /* css header */
@@ -55,7 +57,7 @@ section#section-top-header div#img-full-logo img{
 }
 
 section#section-top-header div#img-small-logo{
-    display: var(--display);
+    display: var(--display-no);
 }
 
 section#section-top-header ul{
@@ -79,7 +81,7 @@ section#section-top-header li i{
 }
 
 section#section-top-header p{
-    text-transform: uppercase;
+    text-transform: var(--text);
     font-weight: bold;
     color: var(--main-color);
 }
@@ -108,10 +110,10 @@ div.profile span#user{
     padding-left: .5rem;
 }
 
-/* css main */
+/* css MAIN */
 
 main{
-    background-color: red;
+    background-color: #141922;
     height: calc(100vh - 100px);
     width: calc(100% - 230px);
     overflow-y: auto;
@@ -131,10 +133,10 @@ section#upgrade{
 
 section#upgrade a{
     color: var(--main-color);
-    font-size: .8rem;
+    font-size: var(--font-dot-eight);
     font-weight: bold;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: var(--text-big);
     margin-right: .5rem;
     border: 1px solid var(--main-color);
     padding: .5rem 2rem;
@@ -142,8 +144,15 @@ section#upgrade a{
 }
 
 section#list{
-    background-color: green;
-    height: 30px;
+    text-align: center;
+}
+
+section#list ul li{
+    display: inline-block;
+    text-transform: var(--text-big);
+    color: var(--secondary-color);
+    padding: 1rem;
+    font-size: var(--font-dot-eight);
 }
 
 section#container-row{
@@ -151,7 +160,7 @@ section#container-row{
 }
 
 section.row{
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 article.album{
@@ -215,7 +224,7 @@ footer{
     section#section-bottom-header div.separator,
     section#section-bottom-header span.text,
     section#section-bottom-header span#user{
-        display: var(--display);
+        display: var(--display-no);
     }
     
     section#section-top-header div#img-small-logo{
