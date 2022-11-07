@@ -122,11 +122,6 @@ main{
 section#upgrade{
     background-color: #080b12;
     height: 80px;
-}
-
-section#upgrade{
-    background-color: #080b12;
-    height: 80px;
     justify-content: flex-end;
     align-items: center;
 }
@@ -163,11 +158,28 @@ section.row{
     margin-top: 1rem;
 }
 
-article.album{
-    background-color: cyan;
-    height: 200px;
+section.row h2{
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+div.albums-row div.card{
+    font-size: .9rem;
+    text-align: center;
     width: calc((100% / 6) - 1rem);
     margin: 0 1rem 2rem 0;
+}
+
+div.card img{
+    width: 100%;
+}
+
+div.album-info h3{
+    padding: .3rem;
+}
+
+div.album-info p{
+    color: var(--secondary-color);
 }
 
 
@@ -186,12 +198,11 @@ footer{
 /* MEDIUM */
 @media screen and (max-width: 992px){
 
-    section.row{
+    div.albums-row{
         flex-wrap: wrap;
     }
 
-    article.album{
-        height: 170px;
+    div.albums-row div.card{
         width: calc((100% / 4) - 1rem);
     }
 
@@ -200,11 +211,9 @@ footer{
 /* SMALL */
 @media screen and (max-width: 768px){
 
-    article.album{
-        height: 150px;
+    div.albums-row div.card{
         width: calc((100% / 2) - 1rem);
     }
-
 }
 
 /* X-SMALL */
