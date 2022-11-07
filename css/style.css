@@ -32,6 +32,7 @@ ul{
 
 :root{
     --main-color: white;
+    --secondary-color: gray;
 }
 
 /* css header */
@@ -40,11 +41,13 @@ header{
     background-color: black;
     height: calc(100vh - 100px);
     width: 230px;
-    color: gray;
+    color: var(--secondary-color);
 
 }
 
-section#section-top-header{
+section#section-top-header,
+section#section-bottom-header
+{
     padding: 1rem;
 }
 
@@ -87,8 +90,23 @@ li#made-playlist span.text{
 }
 
 section#section-bottom-header{
-    background-color: blue;
-    height: 50px;
+    
+}
+
+div.install span.text{
+    padding-left: .5rem;
+}
+
+section#section-bottom-header div.separator{
+    border: 1px solid var(--secondary-color);
+    margin: .5rem 0;
+}
+
+div.profile span#user{
+    color: var(--main-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-left: .5rem;
 }
 
 /* css main */
