@@ -33,6 +33,7 @@ ul{
 :root{
     --main-color: white;
     --secondary-color: gray;
+    --display: none; 
 }
 
 /* css header */
@@ -42,17 +43,19 @@ header{
     height: calc(100vh - 100px);
     width: 230px;
     color: var(--secondary-color);
-
 }
 
 section#section-top-header,
-section#section-bottom-header
-{
+section#section-bottom-header{
     padding: 1rem;
 }
 
-section#section-top-header img{
+section#section-top-header div#img-full-logo img{
     width: 75%;
+}
+
+section#section-top-header div#img-small-logo{
+    display: var(--display);
 }
 
 section#section-top-header ul{
@@ -87,10 +90,6 @@ section#section-top-header ul li#made-playlist{
 
 li#made-playlist span.text{
     margin-left: 1.75rem;
-}
-
-section#section-bottom-header{
-    
 }
 
 div.install span.text{
@@ -184,7 +183,25 @@ footer{
 @media screen and (max-width: 576px){
 
     header{
-        width: 70px;
+        width: 50px;
+        text-align: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    section#section-top-header div#img-full-logo,
+    section#section-top-header li span.text,
+    section#section-top-header p,
+    section#section-top-header ul li#made-playlist,
+    section#section-bottom-header div.separator,
+    section#section-bottom-header span.text,
+    section#section-bottom-header span#user{
+        display: var(--display);
+    }
+    
+    section#section-top-header div#img-small-logo{
+        display: inline-block;
+        width: 100%;
     }
 
     main{
