@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
 /* UTILITY */
 
 .flex{
@@ -35,8 +44,24 @@ header{
 }
 
 section#section-top-header{
-    background-color: lime;
-    height: 400px;
+    padding: 1rem;
+}
+
+section#section-top-header img{
+    width: 75%;
+}
+
+section#section-top-header ul{
+    margin-top: 1rem
+}
+
+section#section-top-header ul>li{
+    padding-bottom: .5rem;
+}
+
+section#section-top-header li span.text{
+    font-size: .9rem;
+    padding-left: .3rem;
 }
 
 section#section-bottom-header{
