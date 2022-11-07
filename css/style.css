@@ -201,6 +201,7 @@ section.row>p{
 div.card div.circle-img{
     border-radius: 50%;
     overflow: hidden;
+    object-fit: cover;
 }
 
 
