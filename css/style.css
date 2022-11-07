@@ -122,6 +122,25 @@ section#upgrade{
     height: 80px;
 }
 
+section#upgrade{
+    background-color: #080b12;
+    height: 80px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+section#upgrade a{
+    color: var(--main-color);
+    font-size: .8rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: .5rem;
+    border: 1px solid var(--main-color);
+    padding: .5rem 2rem;
+    border-radius: 50px;
+}
+
 section#list{
     background-color: green;
     height: 30px;
