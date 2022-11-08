@@ -34,6 +34,10 @@ ul{
     position: relative;
 }
 
+.green-line{
+    border: 1px solid #cbff31;
+}
+
 :root{
     --main-color: white;
     --secondary-color: gray;
@@ -66,6 +70,14 @@ section#section-top-header div#img-small-logo{
 
 section#section-top-header ul{
     margin: 1rem 0;
+}
+
+div.head-green-line{
+    height: 25px;
+    width: 0;
+    position: absolute;
+    top: 15%;
+    left: 0;
 }
 
 section#section-top-header ul>li{
@@ -181,8 +193,7 @@ section#list ul li{
     font-size: var(--font-dot-eight);
 }
 
-li>div.green-line{
-    border: 1px solid #cbff31;
+li>div.list-green-line{
     width: 40%;
     margin: .25rem auto;
 }
@@ -313,7 +324,8 @@ footer{
     section#section-top-header ul li#made-playlist,
     section#section-bottom-header div.separator,
     section#section-bottom-header span.text,
-    section#section-bottom-header span#user{
+    section#section-bottom-header span#user,
+    div.head-green-line{
         display: var(--display-none);
     }
     
