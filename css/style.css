@@ -7,7 +7,7 @@
 }
 
 body{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Vobis', sans-serif;
     color: white;
 }
 
@@ -65,7 +65,7 @@ section#section-top-header ul{
 }
 
 section#section-top-header ul>li{
-    padding-bottom: .5rem;
+    padding-bottom: .7rem;
 }
 
 section#section-top-header li i{
@@ -98,9 +98,17 @@ div.install span.text{
     padding-left: .5rem;
 }
 
+div.install{
+    padding-bottom: .2rem;
+}
+
 section#section-bottom-header div.separator{
     border: 1px solid var(--secondary-color);
     margin: .5rem 0;
+}
+
+div.profile{
+    padding-top: .5rem;
 }
 
 div.profile span#user{
@@ -185,7 +193,7 @@ div.card img{
 }
 
 div.album-info h3{
-    padding: .3rem;
+    padding: 1rem .3rem .6rem;
 }
 
 div.album-info p{
