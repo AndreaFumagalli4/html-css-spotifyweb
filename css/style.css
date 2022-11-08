@@ -181,6 +181,12 @@ section#list ul li{
     font-size: var(--font-dot-eight);
 }
 
+li>div.green-line{
+    border: 1px solid #cbff31;
+    width: 40%;
+    margin: .25rem auto;
+}
+
 section#list ul li:hover{
     cursor: pointer;
     color: var(--main-color);
