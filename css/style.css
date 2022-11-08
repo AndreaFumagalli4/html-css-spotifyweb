@@ -73,10 +73,10 @@ section#section-top-header ul{
 }
 
 div.head-green-line{
-    height: 25px;
+    height: 27px;
     width: 0;
     position: absolute;
-    top: 15%;
+    top: 14%;
     left: 0;
 }
 
@@ -209,17 +209,14 @@ section#container-row{
     padding: 0 1rem;
 }
 
-section.row{
+section.row,
+div.albums-row{
     margin-top: 1rem;
 }
 
 section.row h2{
     padding-top: 1rem;
     font-size: 2rem;
-}
-
-div.albums-row{
-    margin-top: 1rem;
 }
 
 div.albums-row div.card{
@@ -246,11 +243,11 @@ div.album-img img{
     width: 100%;
 }
 
-div.album-img img:hover{
+div.card:hover img{
     opacity: 0.5;    
 }
 
-div.album-img:hover span.play{
+div.card:hover span.play{
     display: block;
 }
 
