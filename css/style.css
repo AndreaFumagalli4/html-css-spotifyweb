@@ -33,7 +33,7 @@ ul{
 :root{
     --main-color: white;
     --secondary-color: gray;
-    --display-no: none; 
+    --display-none: none; 
     --text-big: uppercase;
     --font-dot-eight: .8rem;
 }
@@ -57,7 +57,7 @@ section#section-top-header div#img-full-logo img{
 }
 
 section#section-top-header div#img-small-logo{
-    display: var(--display-no);
+    display: var(--display-none);
 }
 
 section#section-top-header ul{
@@ -153,10 +153,14 @@ section#upgrade a{
     font-weight: bold;
     text-decoration: none;
     text-transform: var(--text-big);
-    margin-right: .5rem;
+    margin-right: 1rem;
     border: 1px solid var(--main-color);
     padding: .5rem 2rem;
     border-radius: 50px;
+}
+
+section#upgrade a:hover{
+    transform: scale(1.15);
 }
 
 /* css list section */
@@ -171,6 +175,11 @@ section#list ul li{
     color: var(--secondary-color);
     padding: 1rem;
     font-size: var(--font-dot-eight);
+}
+
+section#list ul li:hover{
+    cursor: pointer;
+    color: var(--main-color);
 }
 
 /* css album section */
@@ -274,7 +283,7 @@ footer{
     section#section-bottom-header div.separator,
     section#section-bottom-header span.text,
     section#section-bottom-header span#user{
-        display: var(--display-no);
+        display: var(--display-none);
     }
     
     section#section-top-header div#img-small-logo{
