@@ -289,9 +289,15 @@ footer{
     z-index: 3;
 }
 
-section#now-playing img{
+div.footer-album-img{
+    height: 50%;
+    width: 12%;
+    margin: 0 1rem;
+}
+
+div.footer-album-img>img{
     height: 100%;
-    padding: 1.5rem 1rem;
+    width: 100%;
 }
 
 div.footer-album-text{
@@ -318,6 +324,11 @@ div.footer-album-icon i.fa-heart{
 
 section#player div.top{
     padding: 1rem 0;
+}
+
+div.top i.fa-backward-step,
+div.top i.fa-forward-step{
+    padding: 0 1rem;
 }
 
 /* RESPONSIVE !!!! */
