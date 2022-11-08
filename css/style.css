@@ -30,6 +30,10 @@ ul{
     justify-content: space-between;
 }
 
+.p-relative{
+    position: relative;
+}
+
 :root{
     --main-color: white;
     --secondary-color: gray;
@@ -208,8 +212,29 @@ div.albums-row div.card{
     margin: 0 1rem 2rem 0;
 }
 
-div.card img{
+span.play{
+    display: var(--display-none);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+div.albums-row div.card:hover{
+    cursor: pointer;
+    display: inline-block;
+}
+
+div.album-img img{
     width: 100%;
+}
+
+div.album-img img:hover{
+    opacity: 0.5;    
+}
+
+div.album-img:hover span.play{
+    display: block;
 }
 
 div.album-info h3{
