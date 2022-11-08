@@ -21,6 +21,10 @@ ul{
     display: flex;
 }
 
+.flex-center{
+    align-items: center;
+}
+
 .flex-between{
     justify-content: space-between;
 }
@@ -285,19 +289,32 @@ footer{
     z-index: 3;
 }
 
-section#now-playing div,
-section#device-control div{
+section#now-playing img{
     height: 100%;
-    width: 200px;
-    background-color: lime;
+    padding: 1.5rem 1rem;
 }
 
-section#player div{
-    height: 100%;
-    width: 500px;
-    background-color: magenta;
+div.footer-album-text{
+    padding-right: 2rem;
 }
 
+div.footer-album-text h3{
+    font-size: var(--font-dot-eight);
+}
+
+div.footer-album-text p{
+    font-size: .7rem;
+    color: var(--secondary-color);
+    padding-top: .11rem;
+}
+
+div.footer-album-icon{
+    color: var(--secondary-color);
+}
+
+div.footer-album-icon i.fa-heart{
+    padding-right: .75rem;
+}
 
 /* RESPONSIVE !!!! */
 
@@ -311,16 +328,6 @@ section#player div{
     div.albums-row div.card{
         width: calc((100% / 4) - 1rem);
     }
-
-    section#now-playing div,
-    section#device-control div{
-    width: 100px;
-    }
-
-    section#player div{
-        width: 350px;
-    }
-
 }
 
 /* SMALL */
@@ -328,15 +335,6 @@ section#player div{
 
     div.albums-row div.card{
         width: calc((100% / 2) - 1rem);
-    }
-
-    section#now-playing div,
-    section#device-control div{
-    width: 80px;
-    }
-
-    section#player div{
-        width: 250px;
     }
 }
 
