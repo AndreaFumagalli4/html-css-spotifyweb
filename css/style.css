@@ -80,6 +80,17 @@ section#section-top-header li i{
     margin-right: .2rem;
 }
 
+ul li>i.fa-house,
+ul li>span#home{
+    color: var(--main-color);
+}
+
+header ul li:hover,
+header div.install:hover{
+    cursor: pointer;
+    color: var(--main-color);
+}
+
 section#section-top-header p{
     text-transform: var(--text);
     font-weight: bold;
