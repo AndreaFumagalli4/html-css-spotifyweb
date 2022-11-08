@@ -21,6 +21,10 @@ ul{
     display: flex;
 }
 
+.flex-between{
+    justify-content: space-between;
+}
+
 .flex-wrap{
     flex-wrap: wrap;
 }
@@ -281,9 +285,21 @@ footer{
     z-index: 3;
 }
 
+section#now-playing div,
+section#device-control div{
+    height: 100%;
+    width: 200px;
+    background-color: lime;
+}
+
+section#player div{
+    height: 100%;
+    width: 500px;
+    background-color: magenta;
+}
+
 
 /* RESPONSIVE !!!! */
-
 
 /* MEDIUM */
 @media screen and (max-width: 992px){
@@ -296,6 +312,15 @@ footer{
         width: calc((100% / 4) - 1rem);
     }
 
+    section#now-playing div,
+    section#device-control div{
+    width: 100px;
+    }
+
+    section#player div{
+        width: 350px;
+    }
+
 }
 
 /* SMALL */
@@ -303,6 +328,15 @@ footer{
 
     div.albums-row div.card{
         width: calc((100% / 2) - 1rem);
+    }
+
+    section#now-playing div,
+    section#device-control div{
+    width: 80px;
+    }
+
+    section#player div{
+        width: 250px;
     }
 }
 
