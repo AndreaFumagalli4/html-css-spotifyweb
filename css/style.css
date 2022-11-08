@@ -295,13 +295,11 @@ section#now-playing{
 }
 
 div.footer-album-img{
-    height: 55%;
     width: 24%;
     margin: 0 1rem;
 }
 
 div.footer-album-img>img{
-    height: 100%;
     width: 100%;
 }
 
@@ -328,6 +326,7 @@ div.footer-album-icon i.fa-heart{
 }
 
 section#player div.top{
+    text-align: center;
     padding: 1rem 0;
 }
 
@@ -336,6 +335,37 @@ div.top i.fa-forward-step{
     padding: 0 1rem;
 }
 
+section#player{
+    width: 50%;
+}
+
+div.bottom span.start-time{
+    padding-right: 3rem;
+}
+
+div.bottom span.start-time,
+div.bottom span.end-time{
+    color: var(--secondary-color);
+    font-size: var(--font-dot-eight);
+}
+
+div.bottom div.song-played{
+    background-color: var(--main-color);
+    border-radius: 5px 0 0 5px;
+    height: 6px;
+    width: 60%;
+}
+
+div.bottom div.song-time{
+    background-color: var(--secondary-color);
+    border-radius: 0  5px 5px 0;
+    height: 6px;
+    width: 100%;
+}
+
+div.bottom span.end-time{
+    padding-left: 3rem;
+}
 
 
 /* RESPONSIVE !!!! */
