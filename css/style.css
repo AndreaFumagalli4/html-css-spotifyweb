@@ -9,6 +9,7 @@
 body{
     font-family: 'Vobis', sans-serif;
     color: white;
+    overflow: hidden;
 }
 
 ul{
@@ -289,9 +290,13 @@ footer{
     z-index: 3;
 }
 
+section#now-playing{
+    width: 20%;
+}
+
 div.footer-album-img{
-    height: 50%;
-    width: 12%;
+    height: 55%;
+    width: 24%;
     margin: 0 1rem;
 }
 
@@ -330,6 +335,8 @@ div.top i.fa-backward-step,
 div.top i.fa-forward-step{
     padding: 0 1rem;
 }
+
+
 
 /* RESPONSIVE !!!! */
 
