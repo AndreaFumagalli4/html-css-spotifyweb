@@ -316,6 +316,10 @@ div.footer-album-icon i.fa-heart{
     padding-right: .75rem;
 }
 
+section#player div.top{
+    padding: 1rem 0;
+}
+
 /* RESPONSIVE !!!! */
 
 /* MEDIUM */
